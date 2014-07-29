@@ -20,4 +20,4 @@ To use this OSD and / or layout, just clone the code into your .navit folder and
 
 This OSD currently looks like this :
 
-![navit-nuc-osd](https://github.com/pgrandin/navit-nuc-layout/raw/master/screenshot.png)
+![navit-nuc-osd](https://github.com/navit-screenshot-bot/navit-osd-darkblue/raw/master/screenshot.png)

@@ -1,7 +1,7 @@
 <osd enabled="yes" type="button" x="0" y="0"    command="play()" src="${HOME}/.navit/navit-osd-darkblue/images/topbar.png" />
 <osd enabled="yes" type="button" x="0" y="304" command="play()" src="${HOME}/.navit/navit-osd-darkblue/images/bottombar.png" />
 <osd enabled="yes" type="button" x="0" y="-184" command="play()" src="${HOME}/.navit/navit-osd-darkblue/images/bottombarstripe.png" />
-<osd enabled="yes" type="button" x="644" y="50" command="play()" src="${HOME}/.navit/navit-osd-darkblue/images/circle.png" />
+<osd enabled="yes" type="button" x="634" y="50" command="play()" src="${HOME}/.navit/navit-osd-darkblue/images/circle.png" />
 
 <osd x="40" y="0" w="560" h="40" align="4" type="text" label="${navigation.item.street_name_systematic} ${navigation.item.street_name}" font_size="300" background_color="#00000080" />
 

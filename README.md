@@ -20,4 +20,4 @@ To use this OSD and / or layout, just clone the code into your .navit folder and
 
 This OSD currently looks like this :
 
-![navit-nuc-darkblue](https://github.com/mineque/navit-osd-darkblue//raw/master/screenshot.png)
+![navit-nuc-darkblue](https://github.com/mineque/navit-osd-darkblue/raw/master/screenshot.png)

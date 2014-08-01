@@ -1,9 +1,9 @@
 <xiroot>
 
-    <osd enabled="yes" type="image" x="0"   y="0"    src="./images/topbar.png" />
+    <osd enabled="yes" type="image" x="0"   y="10"    src="./images/topbar.png" />
     <osd enabled="yes" type="image" x="0"   y="-78"  src="./images/bottombar.png" />
     <osd enabled="yes" type="image" x="0"   y="-86"  src="./images/bottombarstripe.png" />
-    <osd enabled="yes" type="image" x="664" y="50"   src="./images/circle.png" />
+    <osd enabled="yes" type="image" x="664" y="60"   src="./images/circle.png" />
 
     <!-- GPS Strenght visualizer. Need to solve img swapping -->
     <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="dark/appbar.connection.quality.extremelylow.png" />
@@ -14,12 +14,12 @@
     <osd enabled="yes" type="button" x="0" y="0" command="play()"   src="dark/appbar.connection.quality.veryhigh.png" />
 
     <!-- Data Connection quality -->
-    <osd enabled="yes" type="button" x="50" y="-90" command="play()"   src="dark/appbar.connection.edge.png" /> <!-- non-existing -->
-    <osd enabled="yes" type="button" x="50" y="-90" command="play()"   src="dark/appbar.connection.3g.png" />
-    <osd enabled="yes" type="button" x="50" y="-90" command="play()"   src="dark/appbar.connection.4g.png" />
+    <osd enabled="no" type="button" x="30" y="0" command="play()"   src="dark/appbar.connection.edge.png" /> <!-- non-existing -->
+    <osd enabled="yes" type="button" x="50" y="0" command="play()"   src="dark/appbar.connection.3g.png" />
+    <osd enabled="no" type="button" x="30" y="0" command="play()"   src="dark/appbar.connection.4g.png" />
 
     <!-- WIFI status? maybe create white/gray or green/red versions?-->
-    <osd enabled="yes" type="button" x="50" y="-90" command="play()"   src="dark/appbar.connection.4g.png" />
+    <osd enabled="yes" type="button" x="110" y="0" command="play()"   src="dark/appbar.connection.wifi.png" />
 
 
     <osd enabled="yes" type="button" x="720" y="0" command="gui.quit()" src="dark/appbar.futurama.bender.png" />
@@ -34,7 +34,7 @@
 
 
     <osd x="40" y="0" w="560" h="40" align="4" type="text" label="${navigation.item.street_name_systematic} ${navigation.item.street_name}" font_size="300" background_color="#00000000" />
-    <osd x="670" y="70" w="120" h="120" type="navigation_next_turn" background_color="#00000000" icon_src="%s_wh_96_96.png" />
+    <osd x="670" y="80" w="120" h="120" type="navigation_next_turn" background_color="#00000000" icon_src="%s_wh_96_96.png" />
 
 
 

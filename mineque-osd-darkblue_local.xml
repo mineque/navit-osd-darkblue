@@ -1,15 +1,45 @@
-<osd enabled="yes" type="button" x="50" y="-90" command="play()"  src="dark/appbar.control.play.png" />
-<osd enabled="yes" type="image" x="0" y="0"     src="images/topbar.png" />
-<osd enabled="yes" type="image" x="0" y="380" h="170"  src="images/bottombar.png" />
-<osd enabled="yes" type="image" x="0" y="-178" h="8"   src="images/bottombarstripe.png" />
-<osd enabled="yes" type="image" x="664" y="50" src="images/circle.png" />
+<xiroot>
 
-<osd x="40" y="0" w="560" h="40" align="4" type="text" label="${navigation.item.street_name_systematic} ${navigation.item.street_name}" font_size="300" background_color="#00000080" />
+    <osd enabled="yes" type="image" x="0"   y="0"    src="./images/topbar.png" />
+    <osd enabled="yes" type="image" x="0"   y="-78"  src="./images/bottombar.png" />
+    <osd enabled="yes" type="image" x="0"   y="-86"  src="./images/bottombarstripe.png" />
+    <osd enabled="yes" type="image" x="664" y="50"   src="./images/circle.png" />
+
+    <!-- GPS Strenght visualizer. Need to solve img swapping -->
+    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="dark/appbar.connection.quality.extremelylow.png" />
+    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="dark/appbar.connection.quality.verylow.png" />
+    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="dark/appbar.connection.quality.low.png" />
+    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="dark/appbar.connection.quality.medium.png" />
+    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="dark/appbar.connection.quality.high.png" />
+    <osd enabled="yes" type="button" x="0" y="0" command="play()"   src="dark/appbar.connection.quality.veryhigh.png" />
+
+    <!-- Data Connection quality -->
+    <osd enabled="yes" type="button" x="50" y="-90" command="play()"   src="dark/appbar.connection.edge.png" /> <!-- non-existing -->
+    <osd enabled="yes" type="button" x="50" y="-90" command="play()"   src="dark/appbar.connection.3g.png" />
+    <osd enabled="yes" type="button" x="50" y="-90" command="play()"   src="dark/appbar.connection.4g.png" />
+
+    <!-- WIFI status? maybe create white/gray or green/red versions?-->
+    <osd enabled="yes" type="button" x="50" y="-90" command="play()"   src="dark/appbar.connection.4g.png" />
+
+
+    <osd enabled="yes" type="button" x="720" y="0" command="gui.quit()" src="dark/appbar.futurama.bender.png" />
+
+    <osd enabled="yes" type="button" x="0" y="-150" command="gui.quit()" src="light/appbar.magnify.add.png" />
+    <osd enabled="yes" type="button" x="720" y="-150" command="gui.quit()" src="light/appbar.magnify.minus.png" />
+
+
+    <osd enabled="yes" type="button" x="-100" y="-90" command="orientation=orientation==0?-1:0;pitch=pitch==0?15:0;zoom=16;pitch==0?zoom_to_route()"   src="dark/appbar.globe.png" />
 
 
 
 
-<osd enabled="yes" type="button" x="0" y="-90" command="play()"   src="dark/appbar.control.rewind.variant.png" />
-<osd enabled="yes" type="button" x="100" y="-90" command="play()" src="dark/appbar.control.pause.png" />
-<osd enabled="yes" type="button" x="150" y="-90" command="play()" src="dark/appbar.control.fastforward.variant.png" />
-<osd enabled="yes" type="button" x="0" y="-90" command="play()"   src="dark/appbar.controlplay.png" />
+    <osd x="40" y="0" w="560" h="40" align="4" type="text" label="${navigation.item.street_name_systematic} ${navigation.item.street_name}" font_size="300" background_color="#00000000" />
+    <osd x="670" y="70" w="120" h="120" type="navigation_next_turn" background_color="#00000000" icon_src="%s_wh_96_96.png" />
+
+
+
+    <osd enabled="yes" type="button" x="0" y="-90" h="50" command="play()"   src="dark/appbar.control.rewind.variant.png" />
+    <osd enabled="yes" type="button" x="100" y="-90" command="play()" src="dark/appbar.control.pause.png" />
+    <osd enabled="yes" type="button" x="150" y="-90" command="play()" src="dark/appbar.control.fastforward.variant.png" />
+    <osd enabled="yes" type="button" x="50" y="-90" command="play()"   src="dark/appbar.control.play.png" />
+</xiroot>

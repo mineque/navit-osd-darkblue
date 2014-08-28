@@ -29,7 +29,9 @@
     <osd enabled="yes" type="text" label="${navigation.item[1].length[named]}" x="-190" y="50" w="120" h="40" font_size="500" background_color="#00000000" />
     <osd enabled="yes" type="text" label="${tracking.item.route_speed[value]}" x="-70" y="50" w="70" h="40"  font_size="500" background_color="#00000000" />
 
+    <!-- TODO  waiting for turn array getter implementation -->
     <osd enabled="no" type="navigation_next_turn" x="615" y="90" w="120" h="120"  icon_src="%s_wh_96_96.png" />
+
     <osd enabled="yes" type="text" label="${navigation.item[2].length[named]}" x="-65" y="170" w="65" h="40" font_size="250" background_color="#00000000"/>
 
 
@@ -66,6 +68,8 @@
     <osd enabled="yes" type="button" x="255" y="420" w="70" h="60" src="" command='spawn("amixer", "set", "Headphone", "5%+")'/>
     <!-- -->
     <osd enabled="no" type="text"   x="330" y="439" w="398" h="34" background_color="#ddddddca" label=" "/>
+    <!-- TODO  waiting for playing now/next text item implementation -->
+    <osd enabled="no" type="text"   x="330" y="439" w="398" h="34" label="${spotify.playing.now()}" background_color="#ddddddca"/>
     <osd enabled="yes" type="button" x="330" y="439" w="398" h="34" src="" command='gui.spotify_show_playlist()'/>
     <!-- -->
 

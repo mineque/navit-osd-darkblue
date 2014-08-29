@@ -22,7 +22,15 @@
 
     <osd enabled="no" type="button" x="720" y="0" command="gui.quit()" src="$NAVIT_SHAREDIR/dark/appbar.futurama.bender.png" />
 
-    <osd x="40" y="0" w="560" h="40" align="4" type="text" label="${navigation.item.street_name_systematic} ${navigation.item.street_name}" font_size="300" background_color="#00000000" />
+
+    <osd x="0" y="0" w="40" h="40" enabled="yes" type="gps_status" background_color="#00000000" />
+    <osd x="40" y="0" w="560" h="40" align="4" type="text" label="@${navigation.item.street_name_systematic} ${navigation.item.street_name}" font_size="500" background_color="#00000000" text_color="#b0fbeaFF" />
+    <osd x="610" y="0" w="200" h="40" type="text" font_size="400" align="0" label="${navigation.item.destination_length[named]}/${navigation.item.destination_time[remaining]}" background_color="#00000000" text_color="#b0fbeaff"/>
+    <osd x="0" y="50"  w="40" h="40" type="navigation_next_turn" background_color="#00000050" icon_src="%s_wh_32_32.png" />
+    <osd x="40" y="45" w="600" h="40" align="4" type="text" label="${navigation.item[1].street_name_systematic} ${navigation.item[1].street_name}" font_size="400" background_color="#00000000" text_color="#ffffffff" />
+
+
+
 
     <osd enabled="no" type="text"    x="670" y="60" w="120" h="120"  background_color="#000000cc" label=" "/>
     <osd enabled="yes" type="navigation_next_turn" x="615" y="90" w="120" h="120"  icon_src="%s_wh_96_96.png"background_color="#00000000" />
@@ -32,7 +40,7 @@
     <!-- TODO  waiting for turn array getter implementation -->
     <osd enabled="no" type="navigation_next_turn" x="615" y="90" w="120" h="120"  icon_src="%s_wh_96_96.png" />
 
-    <osd enabled="yes" type="text" label="${navigation.item[2].length[named]}" x="-65" y="170" w="65" h="40" font_size="250" background_color="#00000000"/>
+    <osd enabled="yes" type="text" label="${navigation.item[2].length[named]}" x="-70" y="170" w="65" h="40" font_size="250" background_color="#00000000"/>
 
 
 

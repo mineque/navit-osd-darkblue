@@ -1,0 +1,78 @@
+<xiroot>
+
+    <!-- Main background file -->
+            <osd enabled="yes" type="image" x="0"   y="0"   src="$NAVIT_SHAREDIR/NavitOSD_DarkOcean/images/v5.2-bg.png" />
+
+    <!-- Top panel -->
+            <osd enabled="yes" type="gps_status" x="0" y="0" w="40" h="40"  background_color="#00000000" />
+            <osd x="40" y="0" w="560" h="40" align="4" type="text" label="@${navigation.item.street_name_systematic} ${navigation.item.street_name}" font_size="500" background_color="#00000000" text_color="#b0fbeaFF" />
+            <osd x="610" y="0" w="200" h="40" type="text" font_size="400" align="0" label="${navigation.item.destination_length[named]}/${navigation.item.destination_time[remaining]}" background_color="#00000000" text_color="#b0fbeaff" />
+            <osd x="0" y="50"  w="40" h="40" type="navigation_next_turn" background_color="#00000000" icon_src="%s_wh_32_32.png" />
+            <osd x="40" y="45" w="600" h="40" align="4" type="text" label="${navigation.item[1].street_name_systematic} ${navigation.item[1].street_name}" font_size="400" background_color="#00000000" text_color="#ffffffff" />
+
+    <!-- Circle panel -->
+            <osd enabled="no" type="text"    x="670" y="60" w="120" h="120"  background_color="#000000cc" label=" "/>
+            <osd enabled="yes" type="navigation_next_turn" x="615" y="90" w="120" h="120"  icon_src="%s_wh_96_96.png" background_color="#00000000" />
+            <osd enabled="yes" type="text" label="${navigation.item[1].length[named]}" x="-190" y="50" w="120" h="40" font_size="500" background_color="#00000000" />
+            <osd enabled="yes" type="text" label="${tracking.item.route_speed[value]}" x="-70" y="50" w="70" h="40"  font_size="500" background_color="#00000000" />
+            <!-- TODO  waiting for turn array getter implementation -->
+            <osd enabled="no" type="navigation_next_turn" x="615" y="90" w="120" h="120"  icon_src="%s_wh_96_96.png" />
+            <osd enabled="yes" type="text" label="${navigation.item[2].length[named]}" x="-70" y="170" w="65" h="40" font_size="250" background_color="#00000000"/>
+
+    <!-- Right panel -->
+        <!-- Zoom in -->
+            <osd enabled="no"  type="text"    x="-90" y="225" w="90" h="60" background_color="#000000cc" label=" "/>
+            <osd enabled="yes" type="button"  x="-90" y="225" w="90" h="60" command="zoom_in()" src=""/>
+        <!-- Zoom to route -->
+            <osd enabled="no"  type="text"    x="-80" y="285" w="80" h="70" background_color="#ffffffca" label=" "/>
+            <osd enabled="yes" type="button"  x="-80" y="285" w="80" h="70" command="zoom_to_route()" src=""/>
+        <!-- Change view 2D/3D -->
+            <osd enabled="no"  type="text"    x="-70" y="355" w="70" h="65" background_color="#ddddddca" label=" "/>
+            <osd enabled="yes" type="button"  x="-70" y="355" w="70" h="65" command="pitch=pitch==0?20:0;" src=""/>
+        <!-- Zoom out -->
+            <osd enabled="no"  type="text"    x="-65" y="420" w="65" h="60" background_color="#000000cc" label=" "/>
+            <osd enabled="yes" type="button"  x="-65" y="420" w="65" h="60" command="zoom_out()" src="" />
+
+    <!-- Bottom Panel -->
+        <!-- Volume down -->
+            <osd enabled="no"  type="text"   x="0"   y="400" w="50" h="80" background_color="#ddddddca" label=" "/>
+            <osd enabled="yes" type="button" x="0"   y="400" w="50" h="80" src="" command='spawn("amixer", "set", "Headphone", "5%-")'/>
+        <!-- Spotify previous track -->
+            <osd enabled="no"  type="text"   x="50"  y="410" w="69" h="70" background_color="#000000cc" label=" "/>
+            <osd enabled="yes" type="button" x="50"  y="410" w="69" h="70" src="" command="gui.spotify_previous_track()"/>
+        <!-- Spotify play/pause -->
+            <osd enabled="no"  type="text"   x="119" y="415" w="70" h="65" background_color="#ddddddca" label=" "/>
+            <osd enabled="yes" type="button" x="119" y="415" w="70" h="65" src="" command="gui.spotify_toggle()"/>
+        <!-- Spotify next track -->
+            <osd enabled="no"  type="text"   x="189" y="418" w="66" h="62" background_color="#000000cc" label=" "/>
+            <osd enabled="yes" type="button" x="189" y="418" w="66" h="62" src="" command="gui.spotify_next_track()"/>
+        <!-- Volume up -->
+            <osd enabled="no"  type="text"   x="255" y="420" w="70" h="60" background_color="#ddddddca" label=" "/>
+            <osd enabled="yes" type="button" x="255" y="420" w="70" h="60" src="" command='spawn("amixer", "set", "Headphone", "5%+")'/>
+        <!-- Playing now and playlist button -->
+            <osd enabled="no"  type="text"   x="330" y="439" w="398" h="34" background_color="#ddddddca" label=" "/>
+            <!-- TODO  waiting for playing now/next text item implementation -->
+            <osd enabled="no" type="text"   x="330" y="439" w="398" h="34" label="${spotify.playing.now()}" background_color="#ddddddca"/>
+            <osd enabled="yes" type="button" x="330" y="439" w="398" h="34" src="" command='gui.spotify_show_playlist()'/>
+
+
+    <!-- Work in progress area -->
+        <!-- GPS Strenght visualizer. Need to solve img swapping -->
+            <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/NavitOSD_DarkOcean/images/appbar.connection.quality.extremelylow.png" />
+            <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/NavitOSD_DarkOcean/images/appbar.connection.quality.verylow.png" />
+            <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/NavitOSD_DarkOcean/images/appbar.connection.quality.low.png" />
+            <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/NavitOSD_DarkOcean/images/appbar.connection.quality.medium.png" />
+            <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/NavitOSD_DarkOcean/images/appbar.connection.quality.high.png" />
+            <osd enabled="no" type="button" x="0" y="0" command="play()"    src="$NAVIT_SHAREDIR/NavitOSD_DarkOcean/images/appbar.connection.quality.veryhigh.png" />
+
+        <!-- Data Connection quality -->
+            <osd enabled="no" type="button" x="30" y="0" command="play()"   src="$NAVIT_SHAREDIR/NavitOSD_DarkOcean/images/appbar.connection.edge.png" /> <!-- non-existing -->
+            <osd enabled="no" type="button" x="50" y="0" command="play()"   src="$NAVIT_SHAREDIR/NavitOSD_DarkOcean/images/appbar.connection.3g.png" />
+            <osd enabled="no" type="button" x="30" y="0" command="play()"   src="$NAVIT_SHAREDIR/NavitOSD_DarkOcean/images/appbar.connection.4g.png" />
+
+        <!-- WIFI status? maybe create white/gray or green/red versions?-->
+            <osd enabled="no" type="button" x="110" y="0" command="play()"   src="$NAVIT_SHAREDIR/NavitOSD_Mineque_DarkOcean/images/appbar.connection.wifi.png" />
+
+
+
+</xiroot>

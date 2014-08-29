@@ -1,26 +1,25 @@
 <xiroot>
 
-    <osd enabled="yes" type="image" x="0"   y="0"   src="$NAVIT_SHAREDIR/images/v5.2-bg.png" />
+    <osd enabled="yes" type="image" x="0"   y="0"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/v5.2-bg.png" />
 
     <!-- GPS Strenght visualizer. Need to solve img swapping -->
 
-    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="dark/appbar.connection.quality.extremelylow.png" />
-    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="dark/appbar.connection.quality.verylow.png" />
-    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="dark/appbar.connection.quality.low.png" />
-    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="dark/appbar.connection.quality.medium.png" />
-    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="dark/appbar.connection.quality.high.png" />
-    <osd enabled="no" type="button" x="0" y="0" command="play()"   src="dark/appbar.connection.quality.veryhigh.png" />
+    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/appbar.connection.quality.extremelylow.png" />
+    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/appbar.connection.quality.verylow.png" />
+    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/appbar.connection.quality.low.png" />
+    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/appbar.connection.quality.medium.png" />
+    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/appbar.connection.quality.high.png" />
+    <osd enabled="no" type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/appbar.connection.quality.veryhigh.png" />
 
     <!-- Data Connection quality -->
-    <osd enabled="no" type="button" x="30" y="0" command="play()"   src="dark/appbar.connection.edge.png" /> <!-- non-existing -->
-    <osd enabled="no" type="button" x="50" y="0" command="play()"   src="dark/appbar.connection.3g.png" />
-    <osd enabled="no" type="button" x="30" y="0" command="play()"   src="dark/appbar.connection.4g.png" />
+    <osd enabled="no" type="button" x="30" y="0" command="play()"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/appbar.connection.edge.png" /> <!-- non-existing -->
+    <osd enabled="no" type="button" x="50" y="0" command="play()"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/appbar.connection.3g.png" />
+    <osd enabled="no" type="button" x="30" y="0" command="play()"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/appbar.connection.4g.png" />
 
     <!-- WIFI status? maybe create white/gray or green/red versions?-->
-    <osd enabled="no" type="button" x="110" y="0" command="play()"   src="dark/appbar.connection.wifi.png" />
+    <osd enabled="no" type="button" x="110" y="0" command="play()"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/appbar.connection.wifi.png" />
 
 
-    <osd enabled="no" type="button" x="720" y="0" command="gui.quit()" src="$NAVIT_SHAREDIR/dark/appbar.futurama.bender.png" />
 
 
     <osd x="0" y="0" w="40" h="40" enabled="yes" type="gps_status" background_color="#00000000" />
@@ -79,8 +78,5 @@
     <!-- TODO  waiting for playing now/next text item implementation -->
     <osd enabled="no" type="text"   x="330" y="439" w="398" h="34" label="${spotify.playing.now()}" background_color="#ddddddca"/>
     <osd enabled="yes" type="button" x="330" y="439" w="398" h="34" src="" command='gui.spotify_show_playlist()'/>
-    <!-- -->
-
-    <osd enabled="no" type="button" x="-160" y="-90" command="orientation=orientation==0?-1:0;pitch=pitch==0?15:0;zoom=16;pitch==0?zoom_to_route()"   src="dark/appbar.globe.png" />
 
 </xiroot>

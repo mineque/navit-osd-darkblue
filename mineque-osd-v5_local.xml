@@ -45,7 +45,7 @@
 
 
     <!-- bottom bar -->
-    <!-- -->
+    <!-- -  -->
 
     <!-- -->
     <osd enabled="no" type="text"    x="-90" y="225" w="90" h="60" background_color="#000000cc" label=" "/>

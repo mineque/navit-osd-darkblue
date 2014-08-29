@@ -1,23 +1,23 @@
 <xiroot>
 
-    <osd enabled="yes" type="image" x="0"   y="0"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/v5.2-bg.png" />
+    <osd enabled="yes" type="image" x="0"   y="0"   src="$NAVIT_SHAREDIR/NavitOSD_Mineque_DarkOcean/images/v5.2-bg.png" />
 
     <!-- GPS Strenght visualizer. Need to solve img swapping -->
 
-    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/appbar.connection.quality.extremelylow.png" />
-    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/appbar.connection.quality.verylow.png" />
-    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/appbar.connection.quality.low.png" />
-    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/appbar.connection.quality.medium.png" />
-    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/appbar.connection.quality.high.png" />
-    <osd enabled="no" type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/appbar.connection.quality.veryhigh.png" />
+    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/NavitOSD_Mineque_DarkOcean/images/appbar.connection.quality.extremelylow.png" />
+    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/NavitOSD_Mineque_DarkOcean/images/appbar.connection.quality.verylow.png" />
+    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/NavitOSD_Mineque_DarkOcean/images/appbar.connection.quality.low.png" />
+    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/NavitOSD_Mineque_DarkOcean/images/appbar.connection.quality.medium.png" />
+    <osd enabled="no"  type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/NavitOSD_Mineque_DarkOcean/images/appbar.connection.quality.high.png" />
+    <osd enabled="no" type="button" x="0" y="0" command="play()"   src="$NAVIT_SHAREDIR/NavitOSD_Mineque_DarkOcean/images/appbar.connection.quality.veryhigh.png" />
 
     <!-- Data Connection quality -->
-    <osd enabled="no" type="button" x="30" y="0" command="play()"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/appbar.connection.edge.png" /> <!-- non-existing -->
-    <osd enabled="no" type="button" x="50" y="0" command="play()"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/appbar.connection.3g.png" />
-    <osd enabled="no" type="button" x="30" y="0" command="play()"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/appbar.connection.4g.png" />
+    <osd enabled="no" type="button" x="30" y="0" command="play()"   src="$NAVIT_SHAREDIR/NavitOSD_Mineque_DarkOcean/images/appbar.connection.edge.png" /> <!-- non-existing -->
+    <osd enabled="no" type="button" x="50" y="0" command="play()"   src="$NAVIT_SHAREDIR/NavitOSD_Mineque_DarkOcean/images/appbar.connection.3g.png" />
+    <osd enabled="no" type="button" x="30" y="0" command="play()"   src="$NAVIT_SHAREDIR/NavitOSD_Mineque_DarkOcean/images/appbar.connection.4g.png" />
 
     <!-- WIFI status? maybe create white/gray or green/red versions?-->
-    <osd enabled="no" type="button" x="110" y="0" command="play()"   src="$NAVIT_SHAREDIR/navit-dark-ocean/images/appbar.connection.wifi.png" />
+    <osd enabled="no" type="button" x="110" y="0" command="play()"   src="$NAVIT_SHAREDIR/NavitOSD_Mineque_DarkOcean/images/appbar.connection.wifi.png" />
 
 
 

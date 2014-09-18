@@ -1,7 +1,7 @@
 Mineque_DarkOcean.xml
 =====================
 
-To use this OSD and / or layout, just clone the code into your .navit folder and add these 2 lines in your navit.xml (right before your other OSD declaration is fine) :
+To use this OSD and / or layout, just clone the code into your navit folder and add these 2 lines in your navit.xml (right before your other OSD declaration is fine) :
 ```xml
 <xi:include href="$NAVIT_SHAREDIR/NavitOSD_Mineque_DarkOcean/Mineque_DarkOcean.xml"/>
 

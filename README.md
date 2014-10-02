@@ -1,5 +1,7 @@
 Mineque_DarkOcean.xml
 =====================
+[![Build Status](https://navit.ci.cloudbees.com/buildStatus/icon?job=mineque-NavitOSD_DarkOcean)](https://navit.ci.cloudbees.com/job/mineque-NavitOSD_DarkOcean/)
+
 
 To use this OSD and / or layout, just clone the code into your navit folder and add these 2 lines in your navit.xml (right before your other OSD declaration is fine) :
 ```xml

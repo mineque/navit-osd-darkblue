@@ -11,4 +11,4 @@ To use this OSD and / or layout, just clone the code into your navit folder and 
 
 This OSD currently looks like this :
 
-![NavitOSD_DarkOcean](https://github.com/mineque/NavitOSD_DarkOcean/raw/master/screenshot.png)
+![NavitOSD_DarkOcean](https://drone.io/github.com/pgrandin/navit/files/bin/navit/mineque.png)
